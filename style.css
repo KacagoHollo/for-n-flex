@@ -22,9 +22,48 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    
+    gap: 15px;
+    margin-top: 15px;
+    
 }
 
 /* 
 Axis sorrend: row - vízszintes
-            column - függőleges 
+column - függőleges 
 */
+
+#root div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 210px;
+    height: 260px;
+    /* margin: 10px; */
+    
+    background-image: radial-gradient(circle, rgba(27,58,75,1) 0%, rgba(0,100,102,1) 29%, rgba(62,31,71,1) 90%);
+    border-radius: 1%;
+    
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 100px;
+    color: #4d194d;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: -6px -6px rgba(77, 25, 77, 0.9);
+
+    transition-duration: 1s;
+}
+
+#root div:hover {
+    width: 170px;
+    height: 240px;
+
+    border-radius: 4%;
+
+    color: rgba(77, 25, 77, 0.8);
+    box-shadow: 4px 4px rgba(77, 25, 77, 0.9);
+
+    font-size: 110px;
+
+    transform:  rotate3d(1, 0.5, 1, 90deg);
+}
