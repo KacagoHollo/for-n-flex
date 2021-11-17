@@ -37,6 +37,7 @@ column - függőleges
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: auto;
     
     width: 210px;
     height: 260px;
