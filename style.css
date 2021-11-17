@@ -20,11 +20,11 @@ select{appearance: none !important; -webkit-appearance: none !important; border-
     flex-wrap: wrap;
     height: 100vh;
     /* flex-direction: column; */
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     
     gap: 15px;
-    margin-top: 15px;
+    margin: 15px 15px;
     
 }
 
@@ -66,5 +66,5 @@ column - függőleges
 
     font-size: 110px;
 
-    transform:  rotate3d(1, 0.5, 1, 90deg);
+    transform:  rotate3d(1, 0.4, 1, 90deg);
 }
