@@ -1,0 +1,90 @@
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+button,
+a{cursor: pointer; color: inherit;}
+
+textarea{resize: none;}
+
+button,
+input,
+textarea,
+select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
+
+/* end of css reset */
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    // flex-wrap: wrap;
+    // height: 100vh;
+    // /* flex-direction: column; */
+    // justify-content: space-around;
+    // align-items: center;
+    
+    gap: 15px;
+    margin: 15px 15px;
+    
+    @media screen and (min-width: 1200px) {
+        margin: 0 150px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (min-width: 1000px) {
+        margin: 0 100px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (min-width: 700px) and (max-width: 999px) {
+        margin: 0 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 699px) {
+        margin: 0 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: auto;
+        
+        width: 210px;
+        height: 260px;
+        /* margin: 10px; */
+        
+        background-image: radial-gradient(circle, rgba(27,58,75,1) 0%, rgba(0,100,102,1) 29%, rgba(62,31,71,1) 90%);
+        border-radius: 1%;
+        
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 100px;
+        color: #4d194d;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+        box-shadow: -6px -6px rgba(77, 25, 77, 0.9);
+    
+        transition-duration: 1s;
+    }
+}
+
+/* 
+Axis sorrend: row - vízszintes
+column - függőleges 
+*/
+
+
+#root div:hover {
+    width: 170px;
+    height: 240px;
+
+    border-radius: 4%;
+
+    color: rgba(77, 25, 77, 0.8);
+    box-shadow: 4px 4px rgba(77, 25, 77, 0.9);
+
+    font-size: 110px;
+
+    transform:  rotate3d(1, 0.4, 1, 90deg);
+}
